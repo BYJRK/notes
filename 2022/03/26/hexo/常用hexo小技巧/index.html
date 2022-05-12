@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/notes/images/apple-touch-icon-next.png">
@@ -16,20 +15,21 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"yunwuyue.xyz","root":"/notes/","images":"/notes/images","scheme":"Mist","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/notes/js/config.js"></script>
-<meta name="description" content="图片操作Markdown的插入图片的方式相信大家都很熟悉： 1![图片标题](path&#x2F;to&#x2F;pic)  虽然Hexo是支持这个语法的，但实际上，如果想用本地图片，需要用到资源文件夹。启用方式为，在 _config.yml中找到： 1post_asset_folder: true # 默认为 false  这样以后再 hexo new post title_name 的时候，就会自动创建一个与po">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yunwuyue.xyz","root":"/notes/","images":"/notes/images","scheme":"Mist","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/notes/js/config.js"></script>
+
+    <meta name="description" content="我打算总结一些常用的 Hexo 小技巧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用Hexo小技巧">
 <meta property="og:url" content="http://yunwuyue.xyz/notes/2022/03/26/hexo/%E5%B8%B8%E7%94%A8hexo%E5%B0%8F%E6%8A%80%E5%B7%A7/index.html">
 <meta property="og:site_name" content="云无月的古厝回廊">
-<meta property="og:description" content="图片操作Markdown的插入图片的方式相信大家都很熟悉： 1![图片标题](path&#x2F;to&#x2F;pic)  虽然Hexo是支持这个语法的，但实际上，如果想用本地图片，需要用到资源文件夹。启用方式为，在 _config.yml中找到： 1post_asset_folder: true # 默认为 false  这样以后再 hexo new post title_name 的时候，就会自动创建一个与po">
+<meta property="og:description" content="我打算总结一些常用的 Hexo 小技巧">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-26T08:48:42.000Z">
-<meta property="article:modified_time" content="2022-03-28T07:51:37.645Z">
+<meta property="article:modified_time" content="2022-05-12T15:41:18.228Z">
 <meta property="article:author" content="云无月">
 <meta property="article:tag" content="Hexo教程">
 <meta name="twitter:card" content="summary">
@@ -44,6 +44,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>常用Hexo小技巧 | 云无月的古厝回廊</title>
   
+
 
 
 
@@ -71,7 +72,7 @@
 
     <a href="/notes/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">云无月的古厝回廊</h1>
+      <p class="site-title">云无月的古厝回廊</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -85,10 +86,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/notes/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-tags"><a href="/notes/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
-        <li class="menu-item menu-item-archives"><a href="/notes/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/notes/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/notes/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/notes/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
   </ul>
 </nav>
 
@@ -134,13 +132,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/notes/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/notes/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -204,11 +202,16 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/notes/images/avatar.png">
       <meta itemprop="name" content="云无月">
-      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="云无月的古厝回廊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="常用Hexo小技巧 | 云无月的古厝回廊">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -225,13 +228,13 @@
 
       <time title="创建时间：2022-03-26 16:48:42" itemprop="dateCreated datePublished" datetime="2022-03-26T16:48:42+08:00">2022-03-26</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-03-28 15:51:37" itemprop="dateModified" datetime="2022-03-28T15:51:37+08:00">2022-03-28</time>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
       </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-05-12 23:41:18" itemprop="dateModified" datetime="2022-05-12T23:41:18+08:00">2022-05-12</time>
+    </span>
 
   
 </div>
@@ -277,6 +280,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/notes/2022/05/12/hexo/%E5%A6%82%E4%BD%95%E7%BB%9F%E8%AE%A1hexo%E5%8D%9A%E5%AE%A2%E6%80%BB%E5%AD%97%E6%95%B0/" rel="next" title="如何统计 hexo 博客总字数">
+                  如何统计 hexo 博客总字数 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>

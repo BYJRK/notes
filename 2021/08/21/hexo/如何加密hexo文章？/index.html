@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/notes/images/apple-touch-icon-next.png">
@@ -16,12 +15,13 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"yunwuyue.xyz","root":"/notes/","images":"/notes/images","scheme":"Mist","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/notes/js/config.js"></script>
-<meta name="description" content="在写 Hexo 博客的时候，可能会有这样的需求：希望能够加密某一篇文章，这样可以让这篇文章只对某些人可见。那怎样才能实现呢？">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yunwuyue.xyz","root":"/notes/","images":"/notes/images","scheme":"Mist","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/notes/js/config.js"></script>
+
+    <meta name="description" content="在写 Hexo 博客的时候，可能会有这样的需求：希望能够加密某一篇文章，这样可以让这篇文章只对某些人可见。那怎样才能实现呢？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何加密 Hexo 文章？">
 <meta property="og:url" content="http://yunwuyue.xyz/notes/2021/08/21/hexo/%E5%A6%82%E4%BD%95%E5%8A%A0%E5%AF%86hexo%E6%96%87%E7%AB%A0%EF%BC%9F/index.html">
@@ -51,6 +51,7 @@
 
 
 
+
   <noscript>
     <link rel="stylesheet" href="/notes/css/noscript.css">
   </noscript>
@@ -74,7 +75,7 @@
 
     <a href="/notes/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">云无月的古厝回廊</h1>
+      <p class="site-title">云无月的古厝回廊</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -88,10 +89,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/notes/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-tags"><a href="/notes/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
-        <li class="menu-item menu-item-archives"><a href="/notes/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/notes/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/notes/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/notes/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
   </ul>
 </nav>
 
@@ -137,13 +135,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/notes/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/notes/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -207,11 +205,16 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/notes/images/avatar.png">
       <meta itemprop="name" content="云无月">
-      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="云无月的古厝回廊">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="如何加密 Hexo 文章？ | 云无月的古厝回廊">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -228,13 +231,13 @@
 
       <time title="创建时间：2021-08-21 18:08:02" itemprop="dateCreated datePublished" datetime="2021-08-21T18:08:02+08:00">2021-08-21</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-07 22:04:58" itemprop="dateModified" datetime="2021-11-07T22:04:58+08:00">2021-11-07</time>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
       </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2021-11-07 22:04:58" itemprop="dateModified" datetime="2021-11-07T22:04:58+08:00">2021-11-07</time>
+    </span>
 
   
 </div>
@@ -250,14 +253,14 @@
 <span id="more"></span>
 
 <h2 id="隐藏文章"><a href="#隐藏文章" class="headerlink" title="隐藏文章"></a>隐藏文章</h2><p>首先，最简单的方法就是将这篇文章给隐藏起来。用到的插件是 <a target="_blank" rel="noopener" href="https://github.com/printempw/hexo-hide-posts">Hexo Hide Posts</a>。安装方法：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-hide-posts --save</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-hide-posts --save</span></span><br></pre></td></tr></table></figure>
 
 <p>然后就可以在某篇文章的 front-matter 中添加：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">hidden:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
 <p>这样这篇文章就不会出现在首页、归档等地方了，但仍然可以通过链接来进行访问。这样，只需要把链接给希望看到这篇文章的人就行了。</p>
 <h2 id="加密文章"><a href="#加密文章" class="headerlink" title="加密文章"></a>加密文章</h2><p>如果觉得这样不够给力，比如希望仍然能够在主页和归档看到这篇文章，但是又不希望所有人都能够直接查看，而是在输入密码后才能查看，那就需要另一个插件了：<a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">Hexo Blog Encrypt</a>。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install --save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install --save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
 
 <p>然后只需要在想要加密的文章的 front-matter 中写上：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">password:</span> <span class="string">hello</span></span><br></pre></td></tr></table></figure>
